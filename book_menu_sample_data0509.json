@@ -1,0 +1,8 @@
+{"_id":"123","name":"double cheese burger","category":"burger","price":{"$numberDouble":"7.99"},"description":"American classical burger."}
+{"_id":"12345","name":"cripsy chicken burger","category":"burger","price":{"$numberDouble":"6.99"},"description":"A burger with cripsy chicken."}
+{"_id":"1234","name":"Beef Fried Rice","category":"fried_rice","price":{"$numberDouble":"8.99"},"description":"Delicious Fried Rice with beef."}
+{"_id":"200","name":"Chicken Noodle","category":"noodle","price":{"$numberDouble":"12.5"},"description":"Chicken Noodle soup with two chicken breasts."}
+{"_id":"1244","name":"Spicy Chicken burger","category":"burger","price":{"$numberDouble":"6.99"},"description":"A burger with spicy chicken."}
+{"_id":"333","name":"Beef Noodle","category":"noodle","price":{"$numberDouble":"12.99"},"description":"Delicious beef noodle soup."}
+{"_id":"155555","name":"Shrimp Fried Rice","category":"fried_rice","price":{"$numberDouble":"11.99"},"description":"Delicious fried rice with fresh shrimp."}
+{"_id":"5555","name":"Pepperoni Pizza ","category":"pizza","price":{"$numberDouble":"6.99"},"description":"Classical Pepperoni Pizza for quick bite."};

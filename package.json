@@ -1,0 +1,31 @@
+{
+  "name": "cs546projectseedish",
+  "version": "1.0.0",
+  "description": "palindrome checker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Weitai Wen 10431526",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "mongodb": "^2.1.18",
+    "mongoose": "^5.0.17",
+    "morgan": "~1.9.0",
+    "node-uuid": "^1.4.7",
+    "session-file-store": "^1.2.0",
+    "shopify-cartjs": "^0.4.1",
+    "xss": "^0.3.8"
+  },
+  "devDependencies": {}
+}
