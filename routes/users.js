@@ -180,13 +180,13 @@ router.post('/forgetpassword', async function (req, res) {
       req.session.user = "";
       loginMessage = "You changed the password successfully";
       res.redirect('/');
-    }  
+    }
   }
   catch (e) {
     message = {
-      message: e
+      error: e
     }
-    res.render("forgetpassword", message)
+    res.render("reg/forgetpassword", message)
   }
 })
 router.get('/private', function(req, res) {
@@ -199,7 +199,7 @@ router.get('/private', function(req, res) {
     res.redirect("/see_menu");
     return;
 } else {
-  console.log(user);
+  //console.log(user);
   res.render('reg/admin', {
     user: req.session.user
   });}

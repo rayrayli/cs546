@@ -1,19 +1,41 @@
 (function($) {
 
-
-
-
+	let oldCat = null;
 	$(document).ready(function(){
 		$(".cat-button").click(function(){
 			let value = $(this).attr("data-filter");
 			if (value == 'all') 
 			{
 				$(".book_single").show("1000")
+				oldCat = null;
+
 			} else {
 				$(".book_single").not("." + value).hide("1000");
 				$(".book_single").filter("." + value).show("1000");
+				oldCat = value;
 			}
-			
+		})
+	});
+	$(document).ready(function(){
+		$(".cat-search").click(function(){
+			const firstNumberElement = document.getElementById("input");
+			let searchValue = firstNumberElement.value;
+
+			if (oldCat) 
+			{
+				$(".book_single").not("." + oldCat).hide("1000");
+				$(".book_single").filter("." + oldCat).show("1000");
+			}else
+			{
+				$(".book_single").show("1000")
+			}
+
+			if (!searchValue ) {
+			}
+			else{
+				$(".book_single").not("." + searchValue).hide("1000");
+				$(".book_single_name").filter("." + searchValue).show("1000");
+			}
 		})
 	});
 

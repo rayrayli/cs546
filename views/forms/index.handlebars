@@ -1,7 +1,16 @@
 <section>
 
   <div class='main-body'>
-
+<div>
+            <div class="left-bar-cat" >
+                <label for="input">Search</label>
+                <input type="string" class="form-control" id="input" placeholder="Search Book Here" value="{{InputName}}">
+            </div>
+            <div class="left-bar-cat">
+                <button class="cat-search">Search</button>
+            </div>
+    
+</div>
   <div class='left-bar'>
     <div class='left-bar-title'>
       <div class='left-bar-cat'>
@@ -9,7 +18,6 @@
       </div>
       <div class="button-list">
       <button class="cat-button" data-filter='all'> Show all</button>
-      
       <button class="cat-button" data-filter='art'><img src="./public/images/art-icon.png" alt="Big Boat" width="60" height="60"> Art&Esthetic</button>
       <button class="cat-button" data-filter='business'><img src="./public/images/business-icon.png" alt="Big Boat" width="60" height="60"> Business</button>
       <button class="cat-button" data-filter='children'><img src="./public/images/children-icon.png" alt="Big Boat" width="60" height="60"> Children</button>
@@ -25,10 +33,10 @@
   <div class="book_list">
       {{#each data}}
     <ul>
-        <div class="book_single {{this.category}}">
-          <div class='book_single_name'>{{this.name}}</div>
-          {{!-- <div class='book_single_category'>{{this.category}}</div> --}}
-          <div class='book_single_version'><strong>version: </strong>{{this.version}}</div>
+        <div class="book_single {{this.category}} {{this.name}}">
+          <div class="book_single_name {{this.name}}"><strong>Book Name: </strong>{{this.name}}</div>
+          <div class='book_single_category'><strong>Category: </strong>{{this.category}}</div>
+          <div class='book_single_version'><strong>Version: </strong>{{this.version}}</div>
           <div class='book_single_price'><strong>Price:</strong> {{this.price}}</div>
           <div class='book_single_description'><strong>Description:</strong> {{this.description}}</div>
         {{!-- <form action="/result" method="POST" class="new-post-form"> --}}
