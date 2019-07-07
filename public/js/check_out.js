@@ -72,6 +72,7 @@
         order_total_price.appendChild(totalTextNode);
         let item = document.getElementById("order_"+order_id);
         item.parentNode.removeChild(item);
+        sessionStorage.clear(orders_now);
       })
     });  
   } catch (e) {
