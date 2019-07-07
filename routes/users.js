@@ -143,9 +143,9 @@ router.post('/changepassword', async function (req, res) {
   }
   catch (e) {
     message = {
-      message: e
+      error: e
     }
-    res.render("changepassword", message)
+    res.render("reg/changepassword", message)
   }
 })
 router.get('/forgetpassword', function (req, res) {
