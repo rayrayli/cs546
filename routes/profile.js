@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
 		
 		// console.log(user.username);
 		res.render("forms/profile", {
-			title: "Food Order",
+			title: "Book Order",
 			data: userInfo,
 			user: req.session.user
 		});

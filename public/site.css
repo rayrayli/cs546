@@ -3,14 +3,32 @@
   }
 
 div {
+    
+    color:blue;
     display:block;
+    
+}
+/*
+div.book-detail{
+    background-image: url('./images/book4.jpg');
+    background-repeat: repeat-y;
 }
 
+div.container{
+    background-image: url('./images/book3.jpg');
+    background-repeat: repeat-x;
+}*/
+
+
+
 body {
+    background-image: url('./images/book1.jpg');
+    background-position:50% 50%;
 	font-family: Georgia, serif;
     font-size: 12pt;
     padding-top: 70px;
     padding-bottom: 70px;
+    
 }
 
 .top-bar {
@@ -19,6 +37,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+   
 }
 
 .bottom-bar {
@@ -60,7 +79,7 @@ h1 {
 }
 
 .left-bar{
-    
+    color:white;
     float:left;
      margin-right:5px; 
     padding-right:20px; 
@@ -69,6 +88,7 @@ h1 {
 }
 
 .cat-button {
+    color: darkblue;
     border: none;
     display:block;
     padding: 12px 16px;
@@ -156,4 +176,36 @@ h1 {
 .order_now {
     font-size: 30pt; 
     
+}
+div.left-bar-cat.input {
+    
+   margin: 10% 50%;
+}
+
+div.row{
+/*background-image:url('./images/book4.jpg');*/
+background-position:80% 50%;
+	font-family: Georgia, serif;
+    font-size: 12pt;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-repeat: no-repeat;
+}
+div.form-group{
+    color:blue;
+    
+    background-size: 10% 10%;
+}
+
+div.main-body{
+    background-image: url('./images/book1.jpg');
+    background-position:50% 50%;
+	font-family: Georgia, serif;
+    font-size: 12pt;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+div.left-bar {
+    color:rgba(37, 10, 10, 0.5);
 }

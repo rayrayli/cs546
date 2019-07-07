@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
 		
 
 		res.render("forms/index", {
-			title: "Food Order",
+			title: "Book Order",
 			data: bookes,
 			user: req.session.user
 		});

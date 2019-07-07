@@ -1,22 +1,13 @@
 <section>
 
   <div class='main-body'>
-<div>
-            <div class="left-bar-cat" >
-                <label for="input">Search</label>
-                <input type="string" class="form-control" id="input" placeholder="Search Book Here" value="{{InputName}}">
-            </div>
-            <div class="left-bar-cat">
-                <button class="cat-search">Search</button>
-            </div>
-    
-</div>
-  <div class='left-bar'>
+  
+<div class='left-bar'>
     <div class='left-bar-title'>
-      <div class='left-bar-cat'>
+      <div class='left-bar-cat' style="color:rgb(255, 255, 255,0.5)">
       Categories
       </div>
-      <div class="button-list">
+      <div class="button-list" >
       <button class="cat-button" data-filter='all'> Show all</button>
       <button class="cat-button" data-filter='art'><img src="./public/images/art-icon.png" alt="Big Boat" width="60" height="60"> Art&Esthetic</button>
       <button class="cat-button" data-filter='business'><img src="./public/images/business-icon.png" alt="Big Boat" width="60" height="60"> Business</button>
@@ -28,7 +19,19 @@
 
       </div>
       </div>
-    </div>
+</div>
+
+
+<div>
+            <div class="left-bar-cat" >
+                <input type="string" class="form-control" id="input" placeholder="Search Book Here" value="{{InputName}}">
+            </div>
+            <div class="left-bar-cat">
+                <button class="cat-search" style="color:blue">Search</button>
+            </div>
+    
+</div>
+
   
   <div class="book_list">
       {{#each data}}
