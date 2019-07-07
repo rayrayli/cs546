@@ -61,6 +61,18 @@
         });
       })
     });
+
+    $(document).ready(function() {
+      $('.delete-button').click(function() {
+        order_total_price.removeChild(totalTextNode);
+        let order_id = $(this).attr("order_no");
+        total_price = total_price - orders_now[order_id].quantity * orders_now[order_id].price;
+        totalTextNode = document.createTextNode("Total Price: " + total_price.toFixed(2));
+        order_total_price.appendChild(totalTextNode);
+        let item = document.getElementById("order_"+order_id);
+        item.parentNode.removeChild(item);
+      })
+    });  
   } catch (e) {
     
   }
