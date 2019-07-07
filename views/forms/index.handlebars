@@ -4,18 +4,18 @@
   
 <div class='left-bar'>
     <div class='left-bar-title'>
-      <div class='left-bar-cat' style="color:rgb(255, 255, 255,0.5)">
+      <div class='left-bar-cat' style="color:black">
       Categories
       </div>
       <div class="button-list" >
-      <button class="cat-button" data-filter='all'> Show all</button>
-      <button class="cat-button" data-filter='art'><img src="./public/images/art-icon.png" alt="Big Boat" width="60" height="60"> Art&Esthetic</button>
-      <button class="cat-button" data-filter='business'><img src="./public/images/business-icon.png" alt="Big Boat" width="60" height="60"> Business</button>
-      <button class="cat-button" data-filter='children'><img src="./public/images/children-icon.png" alt="Big Boat" width="60" height="60"> Children</button>
-      <button class="cat-button" data-filter='cook'><img src="./public/images/cook-icon.png" alt="Big Boat" width="60" height="60"> Cook&Food</button>
-      <button class="cat-button" data-filter='fiction'><img src="./public/images/fiction-icon.png" alt="Big Boat" width="60" height="60">S&MFiction</button>
-      <button class="cat-button" data-filter='history'><img src="./public/images/history-icon.png" alt="Big Boat" width="60" height="60"> History</button>
-      <button class="cat-button" data-filter='literature'><img src="./public/images/literature-icon.png" alt="Big Boat" width="60" height="60"> Literature</button>
+      <button class="cat-button" data-filter='all' style="color:black"> Show all</button>
+      <button class="cat-button" data-filter='art' style="color:black"><img src="./public/images/art-icon.png" alt="Big Boat" width="60" height="60"> Art&Esthetic</button>
+      <button class="cat-button" data-filter='business' style="color:black"><img src="./public/images/business-icon.png" alt="Big Boat" width="60" height="60"> Business</button>
+      <button class="cat-button" data-filter='children' style="color:black"><img src="./public/images/children-icon.png" alt="Big Boat" width="60" height="60"> Children</button>
+      <button class="cat-button" data-filter='cook' style="color:black"><img src="./public/images/cook-icon.png" alt="Big Boat" width="60" height="60"> Cook&Food</button>
+      <button class="cat-button" data-filter='fiction' style="color:black"><img src="./public/images/fiction-icon.png" alt="Big Boat" width="60" height="60">S&MFiction</button>
+      <button class="cat-button" data-filter='history' style="color:black"><img src="./public/images/history-icon.png" alt="Big Boat" width="60" height="60"> History</button>
+      <button class="cat-button" data-filter='literature' style="color:black"><img src="./public/images/literature-icon.png" alt="Big Boat" width="60" height="60"> Literature</button>
 
       </div>
       </div>
@@ -27,7 +27,7 @@
                 <input type="string" class="form-control" id="input" placeholder="Search Book Here" value="{{InputName}}">
             </div>
             <div class="left-bar-cat">
-                <button class="cat-search" style="color:blue">Search</button>
+                <button class="cat-search" style="color:black">Search</button>
             </div>
     
 </div>
@@ -44,7 +44,7 @@
           <div class='book_single_description'><strong>Description:</strong> {{this.description}}</div>
         {{!-- <form action="/result" method="POST" class="new-post-form"> --}}
         
-        <button class='book_single_add' type="button" book-id='{{this._id}}' book-name='{{this.name}}' book-price='{{this.price}}'>Order</button>
+        <button class='book_single_add' style="color:black" type="button" book-id='{{this._id}}' book-name='{{this.name}}' book-price='{{this.price}}'>Order</button>
         {{!-- </form> --}}
         </div>
     </ul>

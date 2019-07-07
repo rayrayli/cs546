@@ -4,7 +4,7 @@
 
 div {
     
-    color:blue;
+    color:white;
     display:block;
     
 }
@@ -28,6 +28,7 @@ body {
     font-size: 12pt;
     padding-top: 70px;
     padding-bottom: 70px;
+    background-repeat: repeat-x;
     
 }
 
@@ -74,6 +75,11 @@ h1 {
 .book_list {
     border-left: 1px solid;
     border-left-color:grey;
+    vertical-align:top;
+    opacity:50%;
+}
+
+.order_book_list{
     vertical-align:top;
     opacity:50%;
 }
@@ -192,13 +198,13 @@ background-position:80% 50%;
     background-repeat: no-repeat;
 }
 div.form-group{
-    color:blue;
+    color:white;
     
     background-size: 10% 10%;
 }
 
 div.main-body{
-    background-image: url('./images/book1.jpg');
+   /* background-image: url('./images/book1.jpg');*/
     background-position:50% 50%;
 	font-family: Georgia, serif;
     font-size: 12pt;

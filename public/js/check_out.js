@@ -14,11 +14,11 @@
       var ul = document.createElement("ul");
       ul.setAttribute("id", "order_" + i);
       var d=document.createElement("div"); 
-      d.textContent = orders_now[i].book_name;
+      d.textContent = "Book Name: " + orders_now[i].book_name;
       eachOrder.book_name = orders_now[i].book_name;
       ul.appendChild(d);
       var d=document.createElement("div"); 
-      d.textContent = orders_now[i].quantity;
+      d.textContent = "Quantity: " + orders_now[i].quantity;
       eachOrder.quantity = orders_now[i].quantity;
       ul.appendChild(d);
       order.push(eachOrder);
@@ -30,6 +30,7 @@
       b.textContent = "Delete";
       b.className = "book_single_delete";
       b.setAttribute('order_no',i);
+      b.setAttribute('style','color:black');
       b.setAttribute('class', 'delete-button');
       ul.appendChild(b);
 
