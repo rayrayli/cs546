@@ -1,5 +1,5 @@
 {
-  "name": "cs546projectseedish",
+  "name": "cs546projectBookStore",
   "version": "1.0.0",
   "description": "palindrome checker",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "Weitai Wen 10431526",
+  "author": "RuiLi,Zhipengzhang,NanCui,huixiang Xu,WenBo Cao",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^3.0.6",

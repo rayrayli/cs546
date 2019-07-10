@@ -20,6 +20,7 @@
 		$(".cat-search").click(function(){
 			const firstNumberElement = document.getElementById("input");
 			let searchValue = firstNumberElement.value;
+//			console.log(searchValue)
 
 			if (oldCat) 
 			{
